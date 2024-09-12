@@ -1,0 +1,19 @@
+<html>
+  <head> 
+    <script src='fhir-client.js'>
+    </script>
+  </head>
+
+  <body>
+    <p>Hello I am the page "launch.html"</p>
+  </body>
+
+  <script>
+    FHIR.oauth2.authorize({
+      'client_id': 'f5f4543f-b8a6-4dab-a2f2-e43b387fc2c3',
+      'scope': 'patient/AllergyIntolerance.read patient/Appointment.read patient/Binary.read patient/CarePlan.read patient/Condition.read patient/Contarct.read patient/Device.read patient/DiagnosticReport.read patient/DocumentReference.read patient Encounter.read patient/Goal.read patient/Encounter.read patient/Goal.read patient Immunization.read patient/MedicationAdministration.read patient/MedicationOrder.read patient/MedicationStatement.read patient/Observation.read patient/Patient.read patient/Person.read patient/Procedure.read patient/ProcedureRequest.read patient/RelatedPerson.read patient/Schedule.read patient/Slot.read patient/launch',
+      'redirect_uri': 'https://oauth.pstmn.io/v1/callback'
+    });
+  </script>
+  
+</html>
