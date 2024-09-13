@@ -26,18 +26,23 @@
       /* Spinner animation color */
       border-radius: 50%;
     }
+
+    .sr-only {
+
+      color: black;
+
+    }
   </style>
 </head>
 
 <body style="text-align: center;">
   <div class="outer">
-    <div class="spinner-border" role="status">
-      <div class="center">
-        <span class="sr-only">Loading...</span>
-      </div>
-    </div>
+    <div class="spinner-border" role="status"></div>
   </div>
+  <p>Loading...</p>
+
 </body>
+
 
 <script>
   FHIR.oauth2.authorize({
