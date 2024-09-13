@@ -8,24 +8,33 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <style>
-    .center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
+    .outer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      /* Ensure it takes up the full height of the body */
     }
 
     .spinner-border {
-      width: 100%;
-
+      /* You can adjust the size and color of the spinner here */
+      width: 3rem;
+      height: 3rem;
+      border: 0.3em solid #00a9a7;
+      /* Spinner color */
+      border-top: 0.3em solid #000;
+      /* Spinner animation color */
+      border-radius: 50%;
     }
   </style>
 </head>
 
-<body>
-  <div class="spinner-border" role="status">
-    <div class="center">
-      <span class="sr-only">Loading...</span>
+<body style="text-align: center;">
+  <div class="outer">
+    <div class="spinner-border" role="status">
+      <div class="center">
+        <span class="sr-only">Loading...</span>
+      </div>
     </div>
   </div>
 </body>
