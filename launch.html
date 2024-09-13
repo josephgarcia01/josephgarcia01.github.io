@@ -1,33 +1,41 @@
 <html>
-  <head> 
-    <script src='fhir-client.js'></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Launching FHIR Client</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+
+<head>
+  <script src='fhir-client.js'></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Launching FHIR Client</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <style>
+  <style>
     .center {
       display: block;
       margin-left: auto;
       margin-right: auto;
       width: 50%;
     }
-    </style>
-  </head>
 
-  <body>
-    <div class="spinner-border" role="status" class="center">
+    .spinner-border {
+      width: 100%;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="spinner-border" role="status">
+    <div class="center">
       <span class="sr-only">Loading...</span>
     </div>
-  </body>
+  </div>
+</body>
 
-  <script>
-    FHIR.oauth2.authorize({
-      'client_id': '5c76f377-aa0c-4bd0-8b6e-3725410ac948',
-      'scope': 'patient/AllergyIntolerance.read patient/Appointment.read patient/Binary.read patient/CarePlan.read patient/Condition.read patient/Contarct.read patient/Device.read patient/DiagnosticReport.read patient/DocumentReference.read patient Encounter.read patient/Goal.read patient/Encounter.read patient/Goal.read patient Immunization.read patient/MedicationAdministration.read patient/MedicationOrder.read patient/MedicationStatement.read patient/Observation.read patient/Patient.read patient/Person.read patient/Procedure.read patient/ProcedureRequest.read patient/RelatedPerson.read patient/Schedule.read patient/Slot.read patient/launch',
-      'redirect_uri': 'https://josephgarcia01.github.io/app.html'
-    });
-  </script>
-  
+<script>
+  FHIR.oauth2.authorize({
+    'client_id': '5c76f377-aa0c-4bd0-8b6e-3725410ac948',
+    'scope': 'patient/AllergyIntolerance.read patient/Appointment.read patient/Binary.read patient/CarePlan.read patient/Condition.read patient/Contarct.read patient/Device.read patient/DiagnosticReport.read patient/DocumentReference.read patient Encounter.read patient/Goal.read patient/Encounter.read patient/Goal.read patient Immunization.read patient/MedicationAdministration.read patient/MedicationOrder.read patient/MedicationStatement.read patient/Observation.read patient/Patient.read patient/Person.read patient/Procedure.read patient/ProcedureRequest.read patient/RelatedPerson.read patient/Schedule.read patient/Slot.read patient/launch',
+    'redirect_uri': 'https://josephgarcia01.github.io/app.html'
+  });
+</script>
+
 </html>
