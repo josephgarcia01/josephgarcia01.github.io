@@ -10,60 +10,64 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <style>
-      img {
-        width: 20%;
-      }
-      .footer {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 1;
-        font-size: 80%;
-        font-weight: 300
-      }
-      
-    </style>
+<link rel="stylesheet" href="styles.css">
+
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>DHR Health FHIR Login</title>
-  <!-- <link href="style.css" rel="stylesheet" type="text/css" /> -->
 </head>
 
-<body style="min-height: 100vh; display: flex; flex-direction: column; text-align:center; background-image: url('background.jpg');  background-size: cover;">
+<body style="min-height: 100vh;  flex-direction: column; text-align:center; background-image: url('background.jpg');  background-size: cover;">
 
   <div class="banner alert bg-secondary alert-dismissible fade show mb-0 rounded-0" role="alert">
     <div class="container text-center text-white font-weight-bolder">
       <p>
         Become a part of the history DHR Health is making,
-        <a href="https://dhrhealth.com/" class="alert-link">click this really scary link</a>
+        <a href="https://dhrhealth.com/" class="alert-link">click here.</a>
       </p>
       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
   </div>
 
-
-  
   <h1 style="background-color: #fafafa" class="p-4">
     <img src="dhr-logo.png"></img>
   </h1>
 
 
   <header class="p-2" role="presentation">
-
     <h5 class="p-5">
-      <div>To ensure your health and security, please click: <a href="launch.html?iss=https://fhir-ehr.sandboxcerner.com/dstu2/a8691d32-b3a7-46d8-980d-d35a4f7a9f4f&aud=">me</a> </div>
+      <div>To ensure your health and security, please click the button below. </div>
       <div>This action helps us protect your personal information and maintain the highest standards of safety.</div>
       <div>Thank you for your cooperation.</div>
     </h5>
-
   </header>
   
+    <a href="launch.html?iss=https://fhir-ehr.sandboxcerner.com/dstu2/a8691d32-b3a7-46d8-980d-d35a4f7a9f4f&aud=" class="btn btn-outline-secondary">Login</a>
+
+    <hr class="footer p-4">
+
+  <ul class="nav footer p-4 justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link" style="color: #40476d" href="https://dhrhealth.com/media/cvgfhosb/ownshipdisclosure.pdf">Physician Owners</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" style="color: #40476d" href="https://dhrhealth.com/media/x4fnnscl/privacy-policy.pdf">Privacy Policy</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" style="color: #40476d" href="https://www.dhrhealth.com/price-transparency/">Price Transparency</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" style="color: #40476d" href="https://dhrhealth.com/patients-and-visitors/non-discrimination-statement/">Non Discrimination Statement</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled"  style="color: #40476d">All Rights Reserved © 2024 DHR Health</a>
+    </li>
+  </ul>
+
   
-  <div class="w3-container">
-    
-    <small style="background-color: #fafafa;" class="footer text-muted">DHR Health meets the federal definition of a “physician-owned hospital” (42 CFR § 489.3) </small>
+  <div class="text-center">
+    <small class="footer text-muted">DHR Health meets the federal definition of a “physician-owned hospital” (42 CFR § 489.3) </small>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
